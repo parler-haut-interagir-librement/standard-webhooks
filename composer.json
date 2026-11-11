@@ -1,0 +1,46 @@
+{
+    "name": "phil/standard-webhooks",
+    "description": "Standard Webhooks 1.0.0 in plain PHP: v1a (Ed25519) and v1 (HMAC-SHA256) signing and verification, the three headers, timestamp tolerance, key reload before rejection, the audience of an envelope, and the deduplication port",
+    "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "ed25519",
+        "hmac",
+        "signature",
+        "standard-webhooks",
+        "webhooks"
+    ],
+    "authors": [
+        {
+            "name": "Philippe Gamache",
+            "email": "philippe@ph-il.ca",
+            "homepage": "https://github.com/ph-il",
+            "role": "Developer"
+        }
+    ],
+    "homepage": "https://ph-il.ca",
+    "require": {
+        "php": ">=8.5",
+        "ext-sodium": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^13.4"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Phil\\StandardWebhooks\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Phil\\StandardWebhooks\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "0.1.x-dev"
+        }
+    }
+}
