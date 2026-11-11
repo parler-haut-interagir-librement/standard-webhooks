@@ -15,7 +15,7 @@ read-only copy split from it: **open issues and pull requests on the monorepo**,
 
 Open an issue before a large change, so that its design can be agreed first. Then:
 
-1. **Write the code from scratch.** No code is copied from another project, even under a compatible licence:
+1. **Write your own code.** No code is copied from another project, even under a compatible licence:
    another project may serve as a reference to read, never as a source to copy, translate or port. A third-party
    licence enters a package only as a declared Composer dependency.
 2. **Keep the package independent of any application.** Its code, comments and documentation never name an

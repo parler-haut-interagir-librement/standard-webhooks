@@ -4,7 +4,7 @@ All notable changes to `phil/standard-webhooks` will be documented in this file.
 
 Updates should follow the [Keep a CHANGELOG](https://keepachangelog.com/) principles.
 
-## NEXT - YYYY-MM-DD
+## 0.1.0-alpha - 2026-11-11
 
 ### Added
 
