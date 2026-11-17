@@ -1,6 +1,6 @@
 {
     "name": "phil/standard-webhooks",
-    "description": "Standard Webhooks 1.0.0 in plain PHP: v1a (Ed25519) and v1 (HMAC-SHA256) signing and verification, the three headers, timestamp tolerance, key reload before rejection, the audience of an envelope, and the deduplication port",
+    "description": "Sign and verify webhooks to the Standard Webhooks 1.0.0 format, compatible with any other library that sends or checks them.",
     "license": "MIT",
     "type": "library",
     "keywords": [

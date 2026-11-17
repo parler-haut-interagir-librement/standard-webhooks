@@ -4,6 +4,14 @@ All notable changes to `phil/standard-webhooks` will be documented in this file.
 
 Updates should follow the [Keep a CHANGELOG](https://keepachangelog.com/) principles.
 
+## 0.1.1-alpha - 2026-11-17
+
+The next version is 0.1.1-alpha: documentation only.
+
+### Changed
+
+- `CONTRIBUTING.md` says what the package does and how to work on it, without the wording of its first drafts.
+
 ## 0.1.0-alpha - 2026-11-11
 
 ### Added

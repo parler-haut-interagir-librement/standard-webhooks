@@ -1,0 +1,33 @@
+# zizmor audits the GitHub Actions workflows of this read-only split repository: injection through untrusted inputs,
+# credentials left to the checkout, permissions wider than needed, actions not pinned to a commit. phil-dev split
+# writes this file on top of each split: change it in phil/dev-tools, not here. Every action is pinned to the commit of
+# the version its comment names.
+name: zizmor
+
+on:
+  push:
+    branches: ['main']
+  pull_request:
+  schedule:
+    - cron: '23 4 * * 1'
+
+permissions: {}
+
+jobs:
+  zizmor:
+    name: zizmor
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      # The findings fail the job and annotate the workflows, without code scanning: a private repository may not
+      # have it.
+      - name: Audit
+        uses: zizmorcore/zizmor-action@45d7276c9ca790aabd705e31ca99c6185c3e76dd # v0.8.1
+        with:
+          advanced-security: false
